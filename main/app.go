@@ -2,17 +2,26 @@ package main
 
 import (
 	"fmt"
-	"deseptibot/model"
+
+	"deseptibot/model/exchange/livecoin"
+	"deseptibot/controller"
 )
 
+
+const GET_CURRENCY_PAIR = "https://api.livecoin.net/exchange/ticker?currencyPair=BTC/USD"
+const API_KEY = "#############"
+const SIGN = "############################";
+var currencyPair livecoin.CurrencyPair
+var commission livecoin.Commission
+
+
 func main() {
-	fmt.Print("Hello, Vadik!")
+	cp := controller.GetRequest(GET_CURRENCY_PAIR, currencyPair)
+	fmt.Println(cp)
 
-	pair := model.CurrencyPair{
-		9,
-		9,
-		9,
-	}
+	c := controller.GetRequestWithAccessR("https://api.livecoin.net/exchange/client_orders?currencyPair=BTC/USD", commission)
+	fmt.Println(c)
 
-	fmt.Print(pair)
 }
+
+

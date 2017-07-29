@@ -1,12 +1,16 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;deseptibot&gt;">
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../github.com" />
       <root url="file://$PROJECT_DIR$/../ex" />
+      <root url="file://$PROJECT_DIR$/../../deseptibot/src/github.com" />
       <root url="file://$PROJECT_DIR$/../model" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/../github.com" />
       <root url="file://$PROJECT_DIR$/../ex" />
+      <root url="file://$PROJECT_DIR$/../../deseptibot/src/github.com" />
       <root url="file://$PROJECT_DIR$/../model" />
     </SOURCES>
     <excluded>
